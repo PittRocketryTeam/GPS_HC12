@@ -1,5 +1,3 @@
-
-
 #include <SoftwareSerial.h>
 
 //--- Begin Pin Declarations ---//

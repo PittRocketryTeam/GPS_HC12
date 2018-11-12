@@ -1,28 +1,5 @@
-                    
-/*  HC12 Send/Receive Example Program 2
-    By Mark J. Hughes
-    for AllAboutCircuits.com
-
-    This code will automatically detect commands as sentences that begin
-    with AT and both write them and broadcast them to remote receivers
-    to be written.  Changing settings on a local transceiver will
-    change settings on a remote receiver.
-
-    Connect HC12 "RXD" pin to Arduino Digital Pin 4
-    Connect HC12 "TXD" pin to Arduino Digital Pin 5
-    Connect HC12 "Set" pin to Arduino Digital Pin 6
-
-    Do not power HC12 via Arduino over USB.  Per the data sheet,
-    power the HC12 with a supply of at least 100 mA with
-    a 22 uF to 1000 uF reservoir capacitor and connect a 1N4007 diode in 
-    series with the positive supply line if the potential difference exceeds 4.5 V.
-
-    Upload code to two Arduinos connected to two computers 
-    that are separated by at least several meters.
-
-*/
-
 #include <SoftwareSerial.h>
+
 
 const byte HC12RxdPin = 4;                      // "RXD" Pin on HC12
 const byte HC12TxdPin = 5;                      // "TXD" Pin on HC12
